@@ -1,0 +1,8 @@
+# ignore Composer-related folders
+vendor/*
+
+# ignore logs
+logs/*
+
+#ignore IDE
+.idea/*
