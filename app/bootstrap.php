@@ -14,7 +14,7 @@ $app
     ->match('/', function () use ($app) {
         $app['monolog']->addInfo('Logging example in the status route');
 
-        return 'Up and running';
+        return 'Running with log';
     })
     ->method('GET|POST');
 
