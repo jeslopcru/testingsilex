@@ -6,16 +6,15 @@ use Silex\Provider\MonologServiceProvider;
 
 $app = new Silex\Application;
 
+$app['debug'] = true;
+
 $app->register(new MonologServiceProvider(), array(
     'monolog.logfile' => __DIR__ . '/../logs/dev.log'
 ));
 
 $app
-    ->match('/', function () use ($app) {
-        $app['monolog']->addInfo('Logging example in the status route');
-
-        return 'Running with log';
-    })
+    ->match('/', 'Tutorial\Controller\Status::index')
     ->method('GET|POST');
+
 
 return $app;

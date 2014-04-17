@@ -13,3 +13,6 @@ Añadiendo log con monolog para configurar phpunit y symfony/browser-kit para em
 
 ##Step 3
 Empezamos con un poco de TDD
+
+##Step 4
+Autoload y desacoplar Routing y Controller
