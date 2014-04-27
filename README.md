@@ -16,3 +16,9 @@ Empezamos con un poco de TDD
 
 ##Step 4
 Autoload y desacoplar Routing y Controller
+
+##Step5
+Añadir autoload
+
+##Step 6
+Añadir calculator
