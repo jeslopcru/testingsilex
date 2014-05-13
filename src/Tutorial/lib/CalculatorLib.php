@@ -3,7 +3,7 @@
 namespace Tutorial\lib;
 
 
-class Calculator {
+class CalculatorLib {
 
     public function add( $number1, $number2 )
     {

@@ -1,15 +1,15 @@
 <?php
 namespace Tutorial;
 
-use \Tutorial\lib\Calculator;
+use \Tutorial\lib\CalculatorLib;
 
-class CalculatorTest extends \PHPUnit_Framework_TestCase {
+class CalculatorLibTest extends \PHPUnit_Framework_TestCase {
 
     protected $calculator;
 
     public function setup()
     {
-        $this->calculator = new Calculator();
+        $this->calculator = new CalculatorLib();
     }
 
     public function testadd()

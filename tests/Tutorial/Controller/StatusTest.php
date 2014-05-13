@@ -7,12 +7,12 @@ use Silex\WebTestCase;
 /**
  * Basic test class to check the application status route
  */
-class BasicTest extends WebTestCase
+class StatusTest extends WebTestCase
 {
 
     public function createApplication()
     {
-        $app = require __DIR__ . '/../app/bootstrap.php';
+        $app = require __DIR__ . '/../../../app/bootstrap.php';
         $app['debug'] = true;
 
         return $app;
