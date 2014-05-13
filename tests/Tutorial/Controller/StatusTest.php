@@ -7,7 +7,7 @@ use Silex\WebTestCase;
 /**
  * Basic test class to check the application status route
  */
-class BasicTest extends WebTestCase
+class StatusTest extends WebTestCase
 {
 
     public function createApplication()

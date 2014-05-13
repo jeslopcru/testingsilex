@@ -15,6 +15,8 @@ $app->register(new MonologServiceProvider(), array(
 $app
     ->match('/', 'Tutorial\Controller\Status::index')
     ->method('GET|POST');
-
+$app
+    ->match('/calculator/add/', 'Tutorial\Controller\Calculator::add')
+    ->method('GET|POST');
 
 return $app;
