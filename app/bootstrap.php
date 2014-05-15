@@ -13,10 +13,14 @@ $app->register(new MonologServiceProvider(), array(
 ));
 
 $app
-    ->match('/', 'Tutorial\Controller\Status::index')
+    ->match('/calculator/add/{a}/{b}', 'Tutorial\Controller\Calculator::executeAdd')
     ->method('GET|POST');
 $app
-    ->match('/calculator/add/', 'Tutorial\Controller\Calculator::add')
+    ->match('/calculator/add/', 'Tutorial\Controller\Calculator::executeIndex')
     ->method('GET|POST');
+$app
+    ->match('/', 'Tutorial\Controller\Status::index')
+    ->method('GET|POST');
+
 
 return $app;
