@@ -33,3 +33,7 @@ Mover los test del controles para mantener la coherencia código vs. test
 
 #Step 9
 Crear nuevo Controller para calculadora
+
+#Step 10
+.htaccess y función suma
+
